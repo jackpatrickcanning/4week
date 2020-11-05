@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-color:#fff;}
+
+
+h1, th {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+}
+
+.records_cont {
+    text-align: center;
+    padding: 2%;
+}
+
+.table {
+    text-align: left;
+
+    padding: 7%;
+    margin: 0 auto;
+    width: 75%;
+
+    border-collapse: collapse;
+}
+
+.table th, td {
+    padding: 20px;
+}
+
+.table th {
+    background-color: red;
+    color:black;
+}
+
+tr:hover {
+    background-color: darkgray;
+}
+
+.form_cont {
+    padding: 7%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+form {
+    text-align: left;
+
+    padding: 7%;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form label {
+    margin: 15px 0;
+}
+
+form input {
+    padding: 0 20px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: none;
+    color:black;
+}
+
+button, select {
+    color: black;
+
+    padding: 0 30px;
+    height: 55px;
+
+    border-radius: 15px;
+    border: none;
+	font-size: 18px;
+}
+
+form button { 
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+}
+
+.header {
+    margin: 0 auto;
+    width: 75%;
+}
+
+select {
+    color: #000;
+    width: 20%;
+    padding-left: 10px;
+}
+
+.header_btn {
+    background-color: red;
+    color: #fff;
+
+    margin: 10px;
+}
+
+.edit_btn {
+    background-color:red;
+    color: black;
+
+    margin: 5px;
+}
+
+.delete_btn {
+    background-color: grey;
+    color: #fff;
+
+    margin: 5px;
+}
+
+.action_btn {
+    background-color:red;
+}
+
+.close_btn {
+    background-color: #fff;
+}

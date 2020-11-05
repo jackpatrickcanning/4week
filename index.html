@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ohyoufancy.css">
+    <title>Evil Corp</title>
+</head>
+<body>
+    <section class="header">
+        <h1>Evil Corp</h1>
+        <button class="header_btn" onclick="toggleVisibility('Add');">Add New Henchman</button>
+        <select name="filter" id="filter">
+            <option value="0" selected disabled hidden>Evil area</option>
+            <option value="All">All</option>
+            <option value="IT">IT</option>
+            <option value="Assasin">Assasin</option>
+            <option value="HR">HR</option>
+        </select>
+        <button class="header_btn" onclick="filter();">Filter By Henchman role</button>
+    </section>
+
+    <container class="form_cont" id="form_cont" style="display: none;">
+        <h1 id="form_title">Add henchman</h1>
+        <form id="form" onsubmit="event.preventDefault();">
+            <label for="ninumber" id="ninumber">NI Number:</label>
+            <input type="text" name="ninumber" onkeypress="clearError('ninumber');">
+
+            <label for="fullname" id="fullname">Full Name:</label>
+            <input type="text" name="fullname" onkeypress="clearError('fullname');">
+
+            <label for="phoneNum" id="phone">Phone Number:</label>
+            <input type="text" name="phone" onkeypress="clearError('phone');">
+
+            <label for="address" id="address">Address:</label>
+            <input type="text" name="address" onkeypress="clearError('address');">
+
+            <label for="department" id="department">Department:</label>
+            <input type="text" name="department" onkeypress="clearError('department');">
+
+            <button class="action_btn" id="action" onclick="addRec();">Add</button>
+            <button class="close_btn" onclick="toggleVisibility('Add');">Close</button>
+        </form>
+    </container>
+
+    <container class="records_cont">
+        <table class="table" id="table">
+            <thead>
+              <th>NI Number</th>
+              <th>Employee Name</th>
+              <th>Phone Number</th>
+              <th>Address</th>
+              <th>Department</th>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table>
+    </container>
+    
+</body>
+    <script src="Records.js"></script>
+    <script src="Evilcorp.js"></script>
+</html>
