@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ohyoufancy.css">
-    <title>Evil Corp</title>
+    <title>Evil Corp</title> 
+    
 </head>
 <body>
+    <div class="header" id="myHeader">
     <section class="header">
-        <h1>Evil Corp</h1>
-        <button class="header_btn" onclick="toggleVisibility('Add');">Add New Henchman</button>
+        <img src="/Users/Jack.Canning/Documents/GitHub/4week/logo.png" alt="https://get.wallhere.com/photo/artwork-text-logo-Mr-Robot-brand-E-Corp-EVIL-CORP-font-24447.jpg" class="center">
+        </div>
+        <br>
+        <br>
+        <button class="header_btn" onclick="toggleVisibility('Add');">Add New </button>
         <select name="filter" id="filter">
             <option value="0" selected disabled hidden>Evil area</option>
             <option value="All">All</option>
@@ -17,7 +22,7 @@
             <option value="Assasin">Assasin</option>
             <option value="HR">HR</option>
         </select>
-        <button class="header_btn" onclick="filter();">Filter By Henchman role</button>
+        <button class="header_btn" onclick="filter();">Filter</button>
     </section>
 
     <container class="form_cont" id="form_cont" style="display: none;">
@@ -42,15 +47,18 @@
             <button class="close_btn" onclick="toggleVisibility('Add');">Close</button>
         </form>
     </container>
-
+    <br>
+    <br>
+    
     <container class="records_cont">
-        <table class="table" id="table">
+        <table class="table" id="table" class="center">
             <thead>
               <th>NI Number</th>
               <th>Employee Name</th>
               <th>Phone Number</th>
               <th>Address</th>
               <th>Department</th>
+              <th> Henchman Edit </th>
             </thead>
             <tbody id="tableBody">
 
@@ -61,4 +69,9 @@
 </body>
     <script src="Records.js"></script>
     <script src="Evilcorp.js"></script>
+
+    <footer>
+        <p>Author: Jack Canning</p>
+        <p><a href="jack.canning@nationwide.co.uk">Jack.Canning@nationwide.co.uk</a></p>
+      </footer>
 </html>

@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    background-color:#fff;}
+    background-color:black;}
 
 
 h1, th {
-    color: black;
+    color: white;
     text-align: center;
     font-size: x-large;
 }
@@ -15,11 +15,12 @@ h1, th {
 }
 
 .table {
-    text-align: left;
-
+    text-align: center;
+    color: white;
+    padding-top: 102px;
     padding: 7%;
     margin: 0 auto;
-    width: 75%;
+    width: 100%;
 
     border-collapse: collapse;
 }
@@ -29,13 +30,11 @@ h1, th {
 }
 
 .table th {
-    background-color: red;
-    color:black;
+
+    background-color:darkred;/* table background colour */
+    color:white;/* table text */
 }
 
-tr:hover {
-    background-color: darkgray;
-}
 
 .form_cont {
     padding: 7%;
@@ -45,7 +44,7 @@ tr:hover {
 
 form {
     text-align: left;
-
+    color:white;
     padding: 7%;
     width: 50%;
 }
@@ -58,18 +57,72 @@ form {
 form input, form label {
     margin: 15px 0;
 }
-
+/* form boxes for text */
 form input {
-    padding: 0 20px;
+
     height: 45px;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: white;
     border: none;
-    color:black;
+    color:red;
 }
 
-button, select {
+
+form button { 
+    margin: 10px 0;
+}
+
+/* Style the header */
+.header {
+    background: black;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+select {
+    color: #000;
+    width: 20%;
+    padding-left: 10px;
+}
+/* buttons for adding and filtering the henchman */
+.header_btn {
+    background-color: darkred;
     color: black;
+}
+
+.edit_btn {
+    background-color:darkred;
+    color: black;
+
+    margin: 5px;
+}
+
+.delete_btn {
+    background-color: white;/* delete button background*/
+    color: darkred; /* delete button text */
+
+    margin: 5px;
+}
+
+.action_btn {
+    background-color:darkred; /* add henchman submit  button background */
+}
+button, select {
+    color: rgb(0, 0, 0); /* form button text */
 
     padding: 0 30px;
     height: 55px;
@@ -79,50 +132,9 @@ button, select {
 	font-size: 18px;
 }
 
-form button { 
-    margin: 10px 0;
-}
-
-.error {
-    color: red;
-}
-
-.header {
-    margin: 0 auto;
-    width: 75%;
-}
-
-select {
-    color: #000;
-    width: 20%;
-    padding-left: 10px;
-}
-
-.header_btn {
-    background-color: red;
-    color: #fff;
-
-    margin: 10px;
-}
-
-.edit_btn {
-    background-color:red;
-    color: black;
-
-    margin: 5px;
-}
-
-.delete_btn {
-    background-color: grey;
-    color: #fff;
-
-    margin: 5px;
-}
-
-.action_btn {
-    background-color:red;
-}
-
 .close_btn {
-    background-color: #fff;
+    background-color: white;  /* close button background */
+}
+footer {
+    color: white;
 }
