@@ -3,6 +3,8 @@ html {
   }
 .header {
     background: white;
+    z-index: 101;
+    padding-bottom: 22px;
   }
 
   .content {
@@ -130,7 +132,8 @@ h1, th {
     color: black;
     text-align: center;
     font-size: x-large;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    position: sticky;
     ;
 }
 

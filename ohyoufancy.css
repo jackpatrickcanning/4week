@@ -3,6 +3,8 @@ html {
   }
 .header {
     background: black;
+    z-index: 101;
+    padding-bottom: 15px;
   }
 
   .content {
@@ -127,6 +129,8 @@ h1, th {
     color: white;
     text-align: center;
     font-size: x-large;
+    padding-bottom: 10px;
+    position: sticky;
 }
 
 .records_cont {
@@ -139,10 +143,15 @@ h1, th {
     color: white;
     padding-top: 102px;
     padding: 7%;
+    height: 105vh;
     margin: 0 auto;
     width: 100%;
-    z-index: 100;
     border-collapse: collapse;
+    
+}
+img.resize {
+    width:2%; 
+    height: auto;
 }
 
 .table th, td {
@@ -152,7 +161,7 @@ h1, th {
 
 .table th {
     position: sticky;
-    top: 15%;
+    top: 22%;
     z-index: 100;
     background-color:darkred;
     color:white;
