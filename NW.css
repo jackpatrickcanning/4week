@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 .header {
-    background: black;
+    background: white;
   }
 
   .content {
@@ -25,12 +25,12 @@ select {
 }
 
 .header_btn {
-    background-color: darkred;
+    background-color: #004288;
     color: black;
 }
 
 .edit_btn {
-    background-color:darkred;
+    background-color:#004288;
     color: black;
 
     margin: 5px;
@@ -38,13 +38,13 @@ select {
 
 .delete_btn {
     background-color: white;
-    color: darkred; 
+    color: #004288; 
 
     margin: 5px;
 }
 
 .action_btn {
-    background-color:darkred;
+    background-color:#004288;
 }
 
 button, select {
@@ -73,6 +73,7 @@ footer {
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    z-index: 200;
     justify-content: center;
 }
 
@@ -95,7 +96,7 @@ footer {
 .modal__title {
     margin-left: 25%;
     font-weight: bold;
-    color:darkred;
+    color:#004288;
 }
 
 .modal__close {
@@ -104,7 +105,7 @@ footer {
     outline: none;
     border: none;
     background: transparent;
-    color: darkred;
+    color: #004288;
     cursor: pointer;
 }
 
@@ -119,11 +120,11 @@ footer {
 
 body {
     margin: 0;
-    background-color:black;}
+    background-color:white;}
 
 
 h1, th {
-    color: white;
+    color: black;
     text-align: center;
     font-size: x-large;
 }
@@ -135,12 +136,16 @@ h1, th {
 
 .table {
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 102px;
     padding: 7%;
     margin: 0 auto;
     width: 100%;
     border-collapse: collapse;
+}
+img.resize {
+    width:2%; 
+    height: auto;
 }
 
 .table th, td {
@@ -150,14 +155,14 @@ h1, th {
 
 .table th {
     position: sticky;
-    top: 15%;
-    z-index: 200;
-    background-color:darkred;
+    top: 18%;
+    z-index: 100;
+    background-color:#004288;
     color:white;
 }
 
 h2  {
-    color: white;
+    color: black;
     font-size: x-large;
 }
 .form_cont {
@@ -168,7 +173,7 @@ h2  {
 
 form {
     text-align: left;
-    color:white;
+    color:black;
     padding: 7%;
     width: 50%;
 }
@@ -185,9 +190,9 @@ form input, form label {
 form input {
 
     height: 45px;
-    background-color: white;
+    background-color: #004288;
     border: none;
-    color:red;
+    color: white;
 }
 
 form button { 

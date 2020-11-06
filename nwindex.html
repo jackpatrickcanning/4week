@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ohyoufancy.css">
+    <link rel="stylesheet" href="NW.css">
     <link rel=“shortcut icon” href=myIcon.ico type=“image/x-icon”/>
-    <title>Evil Corp</title> 
+    <title>Nationwide HR</title> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="header" id="myHeader">
     <section class="header">
-        <img src="/Users/Jack.Canning/Documents/GitHub/4week/logo.png" alt="https://get.wallhere.com/photo/artwork-text-logo-Mr-Robot-brand-E-Corp-EVIL-CORP-font-24447.jpg" class="center">
+        <img src="/Users/Jack.Canning/Documents/GitHub/4week/nwlogo.png" alt="https://dynl.mktgcdn.com/p/jPpU9bYhzEYWnQ2poYw1EIYj9ha4ySR9guujLOLODIc/400x400.jpg" class="center">
 
 
 </section>
@@ -18,10 +18,10 @@
 <body>
     <button class="header_btn" onclick="toggleVisibility('Add');">Add New </button>
     <select name="filter" id="filter">
-        <option value="0" selected disabled hidden>Evil area</option>
+        <option value="0" selected disabled hidden>Area</option>
         <option value="All">All</option>
         <option value="IT">IT</option>
-        <option value="Assasin">Assasin</option>
+        <option value="Sales">Sales</option>
         <option value="HR">HR</option>
     </select>
     <button class="header_btn" onclick="filter();">Filter</button>
@@ -32,7 +32,7 @@
 
 
     <container class="form_cont" id="form_cont" style="display: none;">
-        <h2 id="form_title">Add henchman</h2>
+        <h2 id="form_title">Add Employee</h2>
         <form id="form" onsubmit="event.preventDefault();">
             <label for="ninumber" id="ninumber">NI Number:</label>
             <input type="text" name="ninumber" onkeypress="clearError('ninumber');">
@@ -60,11 +60,11 @@
         <table class="table" id="table" class="center">
             <thead>
               <th>NI Number</th>
-              <th>Henchman Name</th>
+              <th>Employee Name</th>
               <th>Phone Number</th>
               <th>Address</th>
               <th>Department</th>
-              <th> Henchman Edit </th>
+              <th> Employee Edit </th>
             </thead>
             <tbody id="tableBody">
 
@@ -74,11 +74,11 @@
     
 </body>
     <script src="Records.js"></script>
-    <script src="Evilcorp.js"></script>
+    <script src="NW.js"></script>
 
     <footer>
         <p>Author: Jack Canning</p>
         <p><a href="jack.canning@nationwide.co.uk">Jack.Canning@nationwide.co.uk</a></p>
-        <img src="/Users/Jack.Canning/Documents/GitHub/4week/logo copy.png" alt="https://get.wallhere.com/photo/artwork-text-logo-Mr-Robot-brand-E-Corp-EVIL-CORP-font-24447.jpg" >
+        <img src="/Users/Jack.Canning/Documents/GitHub/4week/nwlogoinv.png" alt="https://dynl.mktgcdn.com/p/jPpU9bYhzEYWnQ2poYw1EIYj9ha4ySR9guujLOLODIc/400x400.jpg">
       </footer>
 </html>

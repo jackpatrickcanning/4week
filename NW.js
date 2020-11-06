@@ -85,8 +85,8 @@ const ModalWindow = {
 
     openModal(modalOptions = {}) {
         modalOptions = Object.assign({
-            title: 'Evil Corp - Covid 19',
-            content: "Our plan worked, Covid 19 is now a thing, so just a heads up to all henchman and employees a like, you're evil I like that. Remember that all HR Work is to carry on as normal so pleaase update your details, or you wont get paid for your Evilness!!!"
+            title: 'Nationwide - Covid 19',
+            content: "Due to the outbreak of Covid 19 We require all employess to update your details, or you wont get paid by Building Society, Nationwide"
         }, modalOptions);
 
         const modalTemplate = this.getHtmlTemplate(modalOptions);
@@ -179,7 +179,7 @@ function toggleVisibility(action) {
 
     if (form.style.display === 'none') {
       form.style.display = 'block';
-      title.innerText = action + " Henchman";
+      title.innerText = action + " Employee";
       button.innerText = action;
     } else {
       form.style.display = 'none';
@@ -215,7 +215,7 @@ function deleteRec(number) {
         return obj.ninumber === number
       });
 
-    let message = "Are you sure you want to execute the following henchman?";
+    let message = "Are you sure you want to edit/remove the employee?";
 
     if(confirm(message)) {
         for (var i = 0; i < records.length; i++) {
