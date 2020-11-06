@@ -86,7 +86,7 @@ const ModalWindow = {
     openModal(modalOptions = {}) {
         modalOptions = Object.assign({
             title: 'Evil Corp - Covid 19',
-            content: "Our plan worked, Covid 19 is now a thing, so just a heads up to all henchman and employees a like, you're evil I like that. Remember that all HR Work is to carry on as normal so pleaase update your details, or you wont get paid for your Evilness!!!"
+            content: "Our plan worked, Covid 19 is now a thing, so just a heads up to all henchman and employees a like, you're evil I like that. Remember that all HR Work is to carry on as normal so pleaase update your details or you wont get paid for your Evilness!!!"
         }, modalOptions);
 
         const modalTemplate = this.getHtmlTemplate(modalOptions);
