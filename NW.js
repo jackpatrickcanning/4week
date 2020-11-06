@@ -149,7 +149,7 @@ function addRec(){
         }
     }
 
-    if(addedValues.length == 6) {
+    if(addedValues.length == 5) {
         var result = {};
         result = Object.assign(...inputs.map((k, i) => ({[k]: addedValues[i]})));
 
